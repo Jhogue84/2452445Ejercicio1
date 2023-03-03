@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Saludo ADSI 2452445"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="281dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:text="Resultado"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnDecrementar"
+        android:layout_width="204dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="60dp"
+        android:onClick="decrementar"
+        android:text="Decrementar"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncrementar"
+        tools:layout_editor_absoluteX="87dp"></Button>
+
+    <Button
+        android:id="@+id/btnIncrementar"
+        android:layout_width="235dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="48dp"
+        android:onClick="incrementar"
+        android:text="Incrementar"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero"
+        tools:layout_editor_absoluteX="87dp" />
+
+    <Button
+        android:id="@+id/idReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
